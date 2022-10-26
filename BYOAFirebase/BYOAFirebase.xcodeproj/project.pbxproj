@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F4381782908821300877E2B /* KetoMeal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4381772908821300877E2B /* KetoMeal.swift */; };
 		5F6652622907367400324B1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6652612907367400324B1B /* AppDelegate.swift */; };
 		5F6652642907367400324B1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6652632907367400324B1B /* SceneDelegate.swift */; };
-		5F6652662907367400324B1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6652652907367400324B1B /* ViewController.swift */; };
 		5F6652692907367400324B1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F6652672907367400324B1B /* Main.storyboard */; };
 		5F66526B2907367600324B1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F66526A2907367600324B1B /* Assets.xcassets */; };
 		5F66526E2907367600324B1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F66526C2907367600324B1B /* LaunchScreen.storyboard */; };
+		5F66527B29073D8000324B1B /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 5F66527A29073D8000324B1B /* FirebaseDatabase */; };
+		5F66527D29073D8000324B1B /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5F66527C29073D8000324B1B /* FirebaseDatabaseSwift */; };
+		5F66527F29073D8000324B1B /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 5F66527E29073D8000324B1B /* FirebaseFunctions */; };
+		5F66528129073D8000324B1B /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5F66528029073D8000324B1B /* FirebaseStorage */; };
+		5F6652832907420000324B1B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5F665282290741FF00324B1B /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F4381772908821300877E2B /* KetoMeal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KetoMeal.swift; sourceTree = "<group>"; };
 		5F66525E2907367400324B1B /* BYOAFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BYOAFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F6652612907367400324B1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F6652632907367400324B1B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5F6652652907367400324B1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5F6652682907367400324B1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5F66526A2907367600324B1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F66526D2907367600324B1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F66526F2907367600324B1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F665282290741FF00324B1B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +37,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F66527F29073D8000324B1B /* FirebaseFunctions in Frameworks */,
+				5F66528129073D8000324B1B /* FirebaseStorage in Frameworks */,
+				5F66527D29073D8000324B1B /* FirebaseDatabaseSwift in Frameworks */,
+				5F66527B29073D8000324B1B /* FirebaseDatabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F4381792908821C00877E2B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5F4381772908821300877E2B /* KetoMeal.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		5F6652552907367400324B1B = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +74,32 @@
 		5F6652602907367400324B1B /* BYOAFirebase */ = {
 			isa = PBXGroup;
 			children = (
-				5F6652612907367400324B1B /* AppDelegate.swift */,
-				5F6652632907367400324B1B /* SceneDelegate.swift */,
-				5F6652652907367400324B1B /* ViewController.swift */,
-				5F6652672907367400324B1B /* Main.storyboard */,
-				5F66526A2907367600324B1B /* Assets.xcassets */,
-				5F66526C2907367600324B1B /* LaunchScreen.storyboard */,
-				5F66526F2907367600324B1B /* Info.plist */,
+				5F665282290741FF00324B1B /* GoogleService-Info.plist */,
+				5F4381792908821C00877E2B /* Model */,
+				5F6652752907375E00324B1B /* Resources */,
+				5F6652762907382900324B1B /* Storyboards */,
 			);
 			path = BYOAFirebase;
+			sourceTree = "<group>";
+		};
+		5F6652752907375E00324B1B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5F6652612907367400324B1B /* AppDelegate.swift */,
+				5F6652632907367400324B1B /* SceneDelegate.swift */,
+				5F66526A2907367600324B1B /* Assets.xcassets */,
+				5F66526F2907367600324B1B /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5F6652762907382900324B1B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5F6652672907367400324B1B /* Main.storyboard */,
+				5F66526C2907367600324B1B /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +118,12 @@
 			dependencies = (
 			);
 			name = BYOAFirebase;
+			packageProductDependencies = (
+				5F66527A29073D8000324B1B /* FirebaseDatabase */,
+				5F66527C29073D8000324B1B /* FirebaseDatabaseSwift */,
+				5F66527E29073D8000324B1B /* FirebaseFunctions */,
+				5F66528029073D8000324B1B /* FirebaseStorage */,
+			);
 			productName = BYOAFirebase;
 			productReference = 5F66525E2907367400324B1B /* BYOAFirebase.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +152,9 @@
 				Base,
 			);
 			mainGroup = 5F6652552907367400324B1B;
+			packageReferences = (
+				5F66527929073D8000324B1B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 5F66525F2907367400324B1B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F66526E2907367600324B1B /* LaunchScreen.storyboard in Resources */,
+				5F6652832907420000324B1B /* GoogleService-Info.plist in Resources */,
 				5F66526B2907367600324B1B /* Assets.xcassets in Resources */,
 				5F6652692907367400324B1B /* Main.storyboard in Resources */,
 			);
@@ -138,7 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F6652662907367400324B1B /* ViewController.swift in Sources */,
+				5F4381782908821300877E2B /* KetoMeal.swift in Sources */,
 				5F6652622907367400324B1B /* AppDelegate.swift in Sources */,
 				5F6652642907367400324B1B /* SceneDelegate.swift in Sources */,
 			);
@@ -289,7 +334,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 54AAP7P8JH;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BYOAFirebase/Info.plist;
+				INFOPLIST_FILE = BYOAFirebase/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -300,7 +345,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jicellcollado.BYOAFirebase;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Bakerwhocodes.BYOAFirebase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -317,7 +362,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 54AAP7P8JH;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BYOAFirebase/Info.plist;
+				INFOPLIST_FILE = BYOAFirebase/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -328,7 +373,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jicellcollado.BYOAFirebase;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Bakerwhocodes.BYOAFirebase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -358,6 +403,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5F66527929073D8000324B1B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5F66527A29073D8000324B1B /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F66527929073D8000324B1B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		5F66527C29073D8000324B1B /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F66527929073D8000324B1B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		5F66527E29073D8000324B1B /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F66527929073D8000324B1B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		5F66528029073D8000324B1B /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F66527929073D8000324B1B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5F6652562907367400324B1B /* Project object */;
 }
